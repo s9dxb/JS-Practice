@@ -4,7 +4,7 @@ const password = ["thor01", "wolverine02", "venom03"];
 
 const users = [];
 
-for (let i = 0; names.length; i++) {
+for (let i = 0; i < names.length; i++) {
   const user = {
     name: names[i],
     email: email[i],
@@ -29,17 +29,26 @@ function Login() {
   }
 }
 
+Login();
 
 function Register() {
-  var email = "thor@gmail.com".toLowerCase()
-  var password = "test"
-  var name = "said"
+  var email = "thor@gmail.com".toLowerCase();
+  var password = "test";
+  var name = "said";
 
   const newUser = {
     name,
     email,
-    password
-  }
+    password,
+  };
 
-  const found = users.find(element => element.email == email)
+  const found = users.find((element) => element.email == email);
+
+  if (found) {
+    alert("user already existing");
+  } else {
+    users.push(newUser);
+  }
 }
+
+Register();
