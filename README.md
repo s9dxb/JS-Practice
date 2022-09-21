@@ -16,7 +16,6 @@ On crée une function Login(email,password) => {
 
 On crée une function Register(name, email,password) => {
     on crée un objet égale au premier et on remplace les valeurs par name,email
-    et password
-
+    et password 
     on check si lelemnt.email et element.password éxiste dans la liste
     et on push l'objet si l'élement néxiste pas
